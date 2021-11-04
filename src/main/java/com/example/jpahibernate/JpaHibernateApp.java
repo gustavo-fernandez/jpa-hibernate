@@ -27,6 +27,8 @@ public class JpaHibernateApp {
       .setParameter("dni", "98765432");
     Person person = typedQuery.getSingleResult();
     System.out.println(">>>> " + person);
+
+    entityManager.close();
   }
 
 }

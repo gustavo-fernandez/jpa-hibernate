@@ -42,6 +42,8 @@ public class HibernateNativeApplication {
 			Person person = query.getSingleResult();
 			System.out.println(">>>> " + person);
 		}
+
+		sessionFactory.close();
 	}
 
 }
